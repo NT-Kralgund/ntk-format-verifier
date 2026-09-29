@@ -1,3 +1,3 @@
-# NTK V10 verifier deployment
+NTK V12 verifier deployment
 
-Publish V10 index.html and the generated config.js together to the repository root for https://nt-kralgund.github.io/ntk-format-verifier/. The configured public key must match the key that signed the PDF. Use only office-approved office details. Never publish keys/ed25519_private.pem. A valid signature means only that the token matches the configured key; it does not independently prove government authority.
+Run INSTALL_NTK_V12.bat first so github_verifier/config.js receives the public key from this installation. Upload index.html, that generated config.js, and emblem.png to the root of the configured GitHub Pages branch. Never upload keys/ed25519_private.pem. The signed watermark is shown on valid V12 QR scans. The verifier checks signed QR metadata and source-template fingerprint, not subsequent changes to final page images.
