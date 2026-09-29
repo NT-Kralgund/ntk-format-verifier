@@ -1,3 +1,3 @@
-NTK V12 verifier deployment
+NTK V13 verifier deployment
 
-Run INSTALL_NTK_V12.bat first so github_verifier/config.js receives the public key from this installation. Upload index.html, that generated config.js, and emblem.png to the root of the configured GitHub Pages branch. Never upload keys/ed25519_private.pem. The signed watermark is shown on valid V12 QR scans. The verifier checks signed QR metadata and source-template fingerprint, not subsequent changes to final page images.
+Run INSTALL_NTK_V13.bat first so github_verifier/config.js receives the V13 public key and retained legacy public keys. Upload index.html, that generated config.js, and emblem.png to the root of the configured GitHub Pages branch. Never upload keys/ed25519_private.pem. The phone verifier checks the QR signature only and states that page content was not checked. Use the desktop app to compare a V13 PDF's rendered-page fingerprint.
